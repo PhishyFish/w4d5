@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def new
+    @user = User.new
     render :new
   end
 
@@ -16,7 +17,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    render text: @user.username
+    render text: @user.email
   end
 
   private

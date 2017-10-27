@@ -1,0 +1,81 @@
+body {
+  background-color: $pink;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/pink-background.png);
+  background-image: url(/assets/pink-background.svg);
+  // background: -webkit-gradient(linear, top, rgba(0,0,0,0.5),
+  // rgba(200,20,200,0.5)), url(../assets/pink-background.png);
+  // background-image: url(../assets/pink-background.svg),
+  //   linear-gradient(to bottom, rgba(255, 160, 182, 0.5) 0%,
+  //   rgba(255, 160, 182, 1) 100%);
+  // background: linear-gradient(to bottom, rgbargba(255, 160, 182, 0) 20%,
+  //           rgba(255, 160, 182, 1)), url(../assets/pink-background.svg);
+  font-family: $sans-serif;
+}
+
+#container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 24px;
+}
+
+form {
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+input[type="submit"], input[value="Sign up"], button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 3px;
+  transition: all 0.2s ease-in;
+  margin: 20px;
+  padding: 10px;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: white;
+  border-color: white;
+  color: $dark-purple;
+}
+
+input[value="Sign up"] {
+  background-color: $pink;
+  border-color: $pink;
+  color: $dark-purple;
+}
+
+input[value="Sign up"]:hover {
+  background-color: $dark-pink;
+  border-color: $dark-pink;
+  color: white;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid $light-pink;
+  background: rgba(255,255,255, 0.6);
+  transition: all 0.2s ease-in;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  background: rgba(255,255,255, 0.9);
+  border-color: $dark-pink;
+}
